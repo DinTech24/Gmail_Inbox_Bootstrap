@@ -1,95 +1,117 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <title>Inbox-dinilthomas@techversant.com</title>
     <link rel="icon" type="image/x-icon" href="D:/Gmail_Inbox/Assets/Images/gmail.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="icon" type="image/x-icon" href="D:/Gmail_Inbox/Assets/Images/gmail.png">
+    <link rel="stylesheet" href="Style_Gmail_Bootstrap.css">
   </head>
   <body>
-     <div class="screenDivsion row w-100">
-      <div class="sideNavBar px-3 col-1">
-          <div class="toggleButtonDiv mt-3">
-            <a href="" class="toggleButton ms-1"><img src="D:/Gmail_Inbox/Assets/Images/toggleButton.png" alt="image"></a>
+     <div class="screenDivsion d-flex w-100">
+       <div class="sideNavBar d-none d-md-grid ps-2 pe-4 ">
+          <div class="toggleButtonDiv mt-4 ms-3 ps-1">
+            <a href="" class="toggleButton"><img src="D:/Gmail_Inbox/Assets/Images/toggleButton.png" alt="image"></a>
           </div>
-          <div class="sideNavComponent1 mt-5 ms-1">
-            <div class="sideNavInnDiv1 ms-2"><i class="fa-solid fa-envelope fa-lg emailEnvolopeIcon "></i></div>
-            <div class="sideNavCompName1 fs-6">Mail</div>
+          <div class="sideNavComponent1 mt-4 ms-1">
+            <div class="sideNavInnDiv1 "><i class="fa-solid fa-envelope fa-lg emailEnvolopeIcon "></i></div>
+            <div class="sideNavCompName1 ">Mail</div>
           </div>
-          <div class="sideNavComponent2 mt-3 ms-1">
-            <div class="sideNavInnDiv2 ms-2"><img src="D:/Gmail_Inbox/Assets/Images/sideNavImage2.png" alt="image"></div>
-            <div class="sideNavCompName fs-6">Chat</div>
+          <div class="sideNavComponent2 mt-4 ms-1">
+            <div class="sideNavInnDiv2 ms-3"><img src="D:/Gmail_Inbox/Assets/Images/sideNavImage2.png" alt="image"></div>
+            <div class="sideNavCompName">Chat</div>
           </div>
-          <div class="sideNavComponent3 mt-3 ms-1">
-            <div class="sideNavInnDiv2 ms-2"><img src="D:/Gmail_Inbox/Assets/Images/sideNavImage3.png" alt="image"></div>
-            <div class="sideNavCompName fs-6">Meet</div>
+          <div class="sideNavComponent3 mt-5 ms-1">
+            <div class="sideNavInnDiv2 ms-3"><img src="D:/Gmail_Inbox/Assets/Images/sideNavImage3.png" alt="image"></div>
+            <div class="sideNavCompName">Meet</div>
           </div>
       </div>
-      <div class="mainContent col-11">
-       <div class="gmailHeader w-90 row align-items-center">
-        <div class="toggleLogo col-2 justify-content-">
+      <div class="mainContent w-100">
+       <div class="gmailHeader d-none d-md-flex row align-items-center">
+        <div class="toggleLogo col-md-3 col-xl-2 col-lg-3  justify-content-evenly">
           <a href="" class="gmailLogo"><img src="D:/Gmail_Inbox/Assets/Images/gmailLogo.png" alt="Image"></a>
         </div>
-        <div class="SearchBarDiv col-5 d-flex align-items-center">
+        <div class="SearchBarDiv border justify-content-between px-2 rounded-pill py-2 col-md-4 col-xl-6 col-lg-4 d-flex align-items-center">
           <div class="searchOptionsDiv">
              <img src="D:/Gmail_Inbox/Assets/Images/zoom-lens.png" height="20" class="searchOption" alt="Image">
           </div>
-          <input type="text" placeholder="Search mail" class="searchBar w-75">
+          <input type="text" placeholder="Search mail" class="searchBar border-0 w-75">
           <div class="searchOptionsDiv ">
              <img src="D:/Gmail_Inbox/Assets/Images/searchOption.png" height="20" class="searchOption" alt="Image">
           </div>
         </div>
-        <div class="activeInfoSettings col-3 justify-content-evenly d-flex align-items-center">
-          <div class="activeListDiv w-50 bg-info form-control">
+        <div class="activeInfoSettings col-md-2 col-xl-2 col-lg-2 justify-content-evenly d-flex align-items-center">
+          <div class="activeListDiv w-50 px-2 rounded-pill py-1 mx-1">
             <b class="greenRound text-success">&#9679;</b>
-            <span class="activeSent">Active</span>
+            <span class="activeSent d-none d-xl-inline-block ">Active</span>
             <i class="fa-solid fa-chevron-down fa-xs" style="color: #000000;"></i>
           </div>
           <a href="" class="infoButton"><i class="fa-regular fa-circle-question fa-lg" style="color: #000000;"></i></a>
-          <a href="" class="settingsButton"><img src="D:/Gmail_Inbox/Assets/Images/Settings.png" height="20" alt="Image"></a>
+          <a href="" class="settingsButton ms-0 ms-xl-3"><img src="D:/Gmail_Inbox/Assets/Images/Settings.png" alt="Image"></a>
         </div>
-        <div class="userNavDiv col-2 d-flex align-items-center justify-content-between">
+        <div class="userNavDiv col-md-3 col-xl-2 col-lg-3 d-flex align-items-center justify-content-between">
           <a href="" class="contentsButton"><img src="D:/Gmail_Inbox/Assets/Images/contentsButton.png" alt="image"></a>
           <a href="" class="userButton"><img src="D:/Gmail_Inbox/Assets/Images/userLogo.png" alt="Image"></a>
         </div>
       </div>
       <div class="mailsectionMainDiv row">
-        <div class="catagoriesDiv col-2">
-          <div class="composeDiv px-3 w-75 fs-6 py-2 bg-info form-control">
-            <i class="fa-solid fa-pen penIcon"></i>
+       	<div class="catagoriesDiv d-none d-md-grid col-xl-2 col-lg-3 col-md-3">
+          <div class="composeDiv px-md-2 px-3 w-75 fs-6 py-3 mt-4 ">
+            <i class="fa-solid fa-pen  penIcon"></i>
             <span class="composeSpan">Compose</span>
           </div>
-          <div class="inboxInnerDiv mt-2 row">
-            <i class="fa-regular fa-image inboxIcon col-1" ></i>
-            <span class="inboxSpan col-9">Inbox</span>
-            <span class="inboxBadge col-1 fs-6">24</span>
+          <div class="inboxInnerDiv mt-2 d-flex align-items-center">
+            <i class="fa-regular fa-image inboxIcon " ></i>
+            <span class="inboxSpan me-lg-5 me-xl-5 me-md-4 ms-4">Inbox</span>
+            <span class="inboxBadge ms-md-4 ms-lg-4 ms-5 fs-6">24</span>
           </div>
-          <div class="catagoriesInnerDiv mt-2">
+          <div class="catagoriesInnerDiv">
             <i class="fa-regular fa-star componentIcon"></i>
             <span class="catagoriesSpan ms-3">Starred</span>
           </div>
-          <div class="catagoriesInnerDiv mt-2">
+          <div class="catagoriesInnerDiv">
             <i class="fa-regular fa-clock componentIcon" ></i>
             <span class="catagoriesSpan ms-3">Snoozed</span>
           </div>
-          <div class="catagoriesInnerDiv mt-2">
+          <div class="catagoriesInnerDiv">
             <i class="fa-regular fa-paper-plane componentIcon"></i>
             <span class="catagoriesSpan ms-3">Sent</span>
           </div>
-          <div class="catagoriesInnerDiv mt-2">
+          <div class="catagoriesInnerDiv">
             <i class="fa-regular fa-note-sticky fa-flip-vertical componentIcon" ></i>
             <span class="catagoriesSpan ms-3">Drafts</span>
           </div>
-          <div class="catagoriesInnerDiv mt-2">
+          <div class="catagoriesInnerDiv">
             <i class="fa-solid fa-chevron-down fa-xs" ></i>
             <span class="catagoriesSpan ms-3">More</span>
           </div>
-          <div class="labelDiv mt-2">
-            <span class="labelSpan">Labels</span>
-            <i class="fa-solid fa-plus labelIcon"></i>
+          <div class="labelDiv mt-3 d-flex">
+            <span class="labelSpan ms-3 me-5">Labels</span>
+            <i class="fa-solid fa-plus labelIcon ms-5"></i>
           </div>
+        </div>
+        <div class="mailSectionDiv col-xl-10 col-lg-9 col-md-9 ">
+          <div class="mailSectionHeader d-flex align-items-center justify-content-between mt-1">
+              	<div class="mailSectionFlex1 d-flex align-items-center w-xl-25 w-lg-25 w-md-50 justify-content-start">
+                 	<div class="mailHeaderDropdown ms-xl-4 ms-lg-3 ms-md-2 ms-sm-2"><i class="fa-regular fa-square mailFlex1iconDiv"></i> <i class="fa-solid fa-caret-down mailFlex1icon2Div"></i> </div>
+                 	<i class="fa-solid fa-rotate-right mailFlex1icon ms-4"></i>
+                 	<i class="fa-solid fa-ellipsis-vertical mailFlex1icon ms-4"></i>
+              	</div>
+              	<div class="mailSectionFlex2 d-flex align-items-center px-2 py-2">
+                 	<span class="mailTotNumber me-5"> 1-45 of 45 </span>
+                 	<div class="mailFlex2Div1 me-4">
+                  		<i class="fa-solid fa-chevron-left fa-xs mailFlex2icon me-4"></i>
+                   		<i class="fa-solid fa-chevron-right fa-xs mailFlex2icon"></i>
+                        </div>
+                <div class="mailFlex2Div2 me-4">
+                   	<i class="fa-solid fa-keyboard "></i>
+                   	<i class="fa-solid fa-sort-down fa-xs"></i>
+                </div>
+              </div>
+           </div>
         </div>
      </div>
   </body>
